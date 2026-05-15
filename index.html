@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Salamanca · Ciudad Eterna</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+
+    body{
+      font-family:'Inter',sans-serif;
+      background:#f3ede3;
+      color:#4e3b2a;
+      scroll-behavior:smooth;
+    }
+
+    h1,h2,h3{
+      font-family:'Cormorant Garamond',serif;
+    }
+
+    .hero-overlay{
+      background:linear-gradient(
+        135deg,
+        rgba(10,10,10,0.65),
+        rgba(80,55,35,0.45)
+      );
+    }
+
+    .glass{
+      backdrop-filter:blur(10px);
+      background:rgba(248,243,235,0.80);
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+
+<!-- HERO -->
+
+<section class="relative min-h-screen overflow-hidden">
+
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/4/44/Salamanca%2C_Catedral_Nueva-PM_16879.jpg?utm_source=es.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
+    alt="Salamanca"
+    class="absolute inset-0 w-full h-full object-cover"
+  >
+
+  <div class="absolute inset-0 hero-overlay"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 py-24 lg:py-32 grid lg:grid-cols-2 gap-16 items-center min-h-screen">
+
+    <div>
+
+      <p class="uppercase tracking-[0.35em] text-sm text-[#f7efe4] mb-5">
+        Castilla y León · España
+      </p>
+
+      <h1 class="text-6xl lg:text-8xl text-white font-bold leading-none mb-8">
+        Salamanca
+      </h1>
+
+      <p class="text-lg lg:text-xl text-[#f7efe4] leading-relaxed max-w-xl mb-10">
+        Una ciudad donde la historia, la universidad y la arquitectura
+        han convertido sus calles en uno de los lugares más bellos de España.
+      </p>
+
+      <div class="flex flex-wrap gap-4">
+
+        <a href="#historia"
+           class="px-7 py-4 rounded-2xl bg-[#8c6b4f] text-white shadow-xl hover:scale-105 transition-transform duration-300">
+          Descubrir
+        </a>
+
+        <a href="#monumentos"
+           class="px-7 py-4 rounded-2xl border border-white text-white hover:bg-white/10 transition-colors duration-300">
+          Monumentos
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- TARJETA HERO -->
+
+    <div class="hidden lg:flex justify-end">
+
+      <div class="glass border border-[#e7d7bf] rounded-[2rem] p-8 max-w-md shadow-2xl">
+
+        <p class="uppercase tracking-[0.3em] text-sm text-[#8c6b4f] mb-4">
+          Historia de Salamanca
+        </p>
+
+        <p class="text-[#5f4a36] leading-relaxed text-lg mb-4">
+          Salamanca fue fundada hace más de dos mil años y se convirtió
+          en uno de los centros históricos más importantes del Reino de León.
+        </p>
+
+        <p class="text-[#5f4a36] leading-relaxed text-lg">
+          Su universidad, creada en 1218 por Alfonso IX, transformó la ciudad
+          en un referente intelectual europeo y en símbolo del conocimiento
+          y el humanismo español.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- HISTORIA -->
+
+<section id="historia" class="py-24">
+
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+
+	<div>
+
+	  <a
+	    href="https://es.wikipedia.org/wiki/Universidad_de_Salamanca"
+	    target="_blank"
+	  >
+
+	    <img
+	      src="https://upload.wikimedia.org/wikipedia/commons/3/30/University_of_Salamanca.jpg?utm_source=es.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
+	      alt="Universidad de Salamanca"
+	      class="rounded-[2rem] shadow-2xl h-[520px] w-full object-cover hover:scale-[1.02] transition-transform duration-300"
+	    >
+
+	  </a>
+
+	</div>
+
+    <div>
+
+      <p class="uppercase tracking-[0.3em] text-sm text-[#8c6b4f] mb-4">
+        Historia y cultura
+      </p>
+
+      <h2 class="text-5xl font-bold mb-8">
+        La Universidad de Salamanca
+      </h2>
+
+      <p class="text-lg leading-relaxed text-[#5f4a36] mb-8">
+        La Universidad de Salamanca fue fundada en el año 1218 por el rey Alfonso IX de León
+        y es una de las universidades más antiguas de Europa.
+      </p>
+
+      <p class="text-lg leading-relaxed text-[#5f4a36] mb-8">
+        Durante siglos fue uno de los centros intelectuales más importantes del continente,
+        atrayendo a estudiantes, pensadores y humanistas de todo el mundo hispánico.
+      </p>
+
+      <p class="text-lg leading-relaxed text-[#5f4a36] mb-8">
+        Su famosa fachada plateresca es uno de los símbolos culturales de Salamanca,
+        conocida por la rana escondida que miles de visitantes intentan encontrar.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- MONUMENTOS -->
+
+<section id="monumentos" class="py-24 bg-[#e7d7bf]/40 border-y border-[#d7c1a2]">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center mb-20">
+
+      <p class="uppercase tracking-[0.3em] text-sm text-[#8c6b4f] mb-4">
+        Lugares emblemáticos
+      </p>
+
+      <h2 class="text-5xl font-bold">
+        La esencia de Salamanca
+      </h2>
+
+    </div>
+
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+
+      <!-- PUENTE ROMANO -->
+
+      <article class="card bg-[#f8f3eb] rounded-[2rem] overflow-hidden shadow-xl border border-[#d7c1a2] transition-transform duration-300">
+
+        <a
+          href="https://es.wikipedia.org/wiki/Puente_romano_de_Salamanca"
+          target="_blank"
+        >
+
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/40/Lado_nuevo_%28alejado%29_-_Puente_Romano.JPG?utm_source=es.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
+            alt="Puente Romano"
+            class="h-64 w-full object-cover hover:scale-105 transition-transform duration-300"
+          >
+
+        </a>
+
+        <div class="p-8">
+
+          <h3 class="text-3xl font-semibold mb-4">
+            Puente Romano
+          </h3>
+
+          <p class="text-[#5f4a36] leading-relaxed">
+            Construido durante la época romana sobre el río Tormes,
+            formó parte de la histórica Vía de la Plata.
+          </p>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- MUSEO CASA LIS -->
+
+      <article class="card bg-[#f8f3eb] rounded-[2rem] overflow-hidden shadow-xl border border-[#d7c1a2] transition-transform duration-300">
+
+        <a
+          href="https://www.museocasalis.org/"
+          target="_blank"
+        >
+
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Fachada_sur_en_la_noche%2C_Casa_Lis%2C_Salamanca.jpg?utm_source=es.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
+            alt="Museo Casa Lis"
+            class="h-64 w-full object-cover hover:scale-105 transition-transform duration-300"
+          >
+
+        </a>
+
+        <div class="p-8">
+
+          <h3 class="text-3xl font-semibold mb-4">
+            Museo Casa Lis
+          </h3>
+
+          <p class="text-[#5f4a36] leading-relaxed">
+            El Museo Art Nouveau y Art Déco, conocido como Casa Lis,
+            es uno de los edificios modernistas más bellos de Salamanca
+            y alberga una importante colección artística.
+          </p>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- HUERTO -->
+
+      <article class="card bg-[#f8f3eb] rounded-[2rem] overflow-hidden shadow-xl border border-[#d7c1a2] transition-transform duration-300">
+
+        <a
+          href="https://es.wikipedia.org/wiki/Huerto_de_Calixto_y_Melibea"
+          target="_blank"
+        >
+
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Huerto_de_Calixto_y_Melibea_%2831053210434%29_edited.jpg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original"
+            alt="Huerto de Calixto y Melibea"
+            class="h-64 w-full object-cover hover:scale-105 transition-transform duration-300"
+          >
+
+        </a>
+
+        <div class="p-8">
+
+          <h3 class="text-3xl font-semibold mb-4">
+            Huerto de Calixto y Melibea
+          </h3>
+
+          <p class="text-[#5f4a36] leading-relaxed">
+            Un jardín romántico inspirado en La Celestina,
+            uno de los rincones más tranquilos y mágicos de la ciudad.
+          </p>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- MAPA -->
+
+<section class="py-24">
+
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div class="text-center mb-16">
+
+      <p class="uppercase tracking-[0.3em] text-sm text-[#8c6b4f] mb-4">
+        Ubicación
+      </p>
+
+      <h2 class="text-5xl font-bold">
+        Salamanca en el mapa
+      </h2>
+
+    </div>
+
+    <div class="rounded-[2rem] overflow-hidden shadow-2xl border border-[#d7c1a2]">
+
+      <iframe
+        src="https://www.google.com/maps?q=Salamanca,+España&output=embed"
+        width="100%"
+        height="500"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ENLACES -->
+
+<section class="py-24 bg-[#e7d7bf]/40 border-y border-[#d7c1a2]">
+
+  <div class="max-w-5xl mx-auto px-6 text-center">
+
+    <p class="uppercase tracking-[0.3em] text-sm text-[#8c6b4f] mb-4">
+      Turismo oficial
+    </p>
+
+    <h2 class="text-5xl font-bold mb-12">
+      Descubre más
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <a href="https://www.salamanca.es/"
+         target="_blank"
+         class="bg-[#f8f3eb] p-8 rounded-[2rem] shadow-xl border border-[#d7c1a2] hover:scale-105 transition-transform duration-300">
+
+        <h3 class="text-2xl font-semibold mb-3">
+          Turismo Salamanca
+        </h3>
+
+      </a>
+
+
+      <a href="https://www.usal.es/"
+         target="_blank"
+         class="bg-[#f8f3eb] p-8 rounded-[2rem] shadow-xl border border-[#d7c1a2] hover:scale-105 transition-transform duration-300">
+
+        <h3 class="text-2xl font-semibold mb-3">
+          Universidad
+        </h3>
+
+      </a>
+
+
+      <a href="https://www.turismocastillayleon.com/es/patrimonio-cultura/salamanca"
+         target="_blank"
+         class="bg-[#f8f3eb] p-8 rounded-[2rem] shadow-xl border border-[#d7c1a2] hover:scale-105 transition-transform duration-300">
+
+        <h3 class="text-2xl font-semibold mb-3">
+          Castilla y León
+        </h3>
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer class="bg-[#efe2cf] border-t border-[#d7c1a2]">
+
+  <div class="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-4">
+
+    <div>
+
+      <h3 class="text-3xl font-bold">
+        Salamanca
+      </h3>
+
+      <p class="text-[#6a533f] mt-2">
+        Historia, universidad y patrimonio eterno.
+      </p>
+
+    </div>
+
+    <div class="text-[#6a533f] text-sm">
+      Nombre del alumno: Celia TG
+    </div>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
